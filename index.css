@@ -1,0 +1,696 @@
+*{
+    margin: 0 ;
+    padding: 0 ; 
+    box-sizing: border-box ;
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body{
+
+    background-color: #222023 ;
+    color: #FBFAF5 ;
+}
+
+
+
+
+/************/
+/************/
+/************/
+
+header{
+   border: none ;
+   background: none ;
+   color: none ;
+   height: auto ;
+   width: auto ;
+}
+
+
+
+.nav_container{          /***********/
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    width: 100% ;
+    height: auto ;
+    position: fixed ;
+    background-position: center ;
+    backdrop-filter: blur(10px) ;
+    z-index: 10 ;
+    background-color: #2220232a ;
+
+}
+
+
+.nav_bar {
+     width: 100% ;
+    height: auto ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding-left: 6vh ;
+    padding-top: 1vh ;
+
+}
+
+header nav {
+    display: flex ;
+    align-items: center ;
+    justify-content: flex-end ;
+    font-size: 3.2vh ;
+    height: auto ;
+    gap: 7vh ;
+    width: 45% ;
+}
+
+header nav a {          /***********/
+    text-decoration: none ;
+    color: #FBFAF5 ;
+    height: 100%;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    padding-top: 2vh ;
+    padding-bottom: 2vh ;
+    font-weight: 200 ;
+}
+
+
+header nav a:hover{ /***********/
+    border-bottom: 3px solid #FBFAF5 ;
+}
+
+
+header nav button{ /***********/
+
+    background-color: #22202300 ;
+}
+
+header nav button img {
+ height: 1vh ;
+ width: 1vh ;
+
+}
+
+
+
+
+.web_logo img {
+ height: 6vh ;
+ width: 8vh ;
+}
+
+.nav_container:hover{ /***********/
+    background-color: #000000 ;
+    transition: 0.2s ;
+}
+
+
+
+.nav_content{
+
+    position: relative ;
+    padding-right: 5vh ;
+}
+
+
+header nav a img {
+   height: 25px ;
+   width: 25px ;
+}
+
+#theme_button_w{
+    position: absolute ;
+    right: 0 ;
+    visibility: visible ;
+    
+}
+
+#theme_button_b
+{
+    position: absolute ;
+    right: 0 ;
+    visibility: hidden ;
+}
+
+/************/
+/************/
+/************/
+
+.home_video {
+    display: flex ;
+    justify-content: flex-end ;
+    align-items: flex-end;
+    height: 100vh ;
+    width: 100% ;
+}
+
+.home_video video {
+    object-fit: cover ;
+    height: 100vh ;
+    width: 100% ;
+}
+ 
+
+
+.home-video-text-container{
+    position: absolute ;
+    height: 100% ;
+    width: 100% ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    gap: 0vh ;
+    z-index: 2;
+}
+
+.home-video-text-container img {
+    height: 23vh ;
+    width: 23vh ;
+    object-fit: contain ;
+    object-position: center ;
+}
+
+.home-video-text-container h2 {
+    font-size: 7vh ;
+}
+
+
+.home-video-text-container img:hover{
+    scale: 1.1 ;
+    transition: 0.5s;
+}
+
+.home-video-text-container h2:hover{
+    transition: 0.4s;
+    scale: 1.1 ;
+}
+
+.home-video-img-container{
+    height: auto ;
+    width: 100% ;
+    z-index: 2 ;
+    display: flex ;
+    justify-content: flex-end ;
+    align-items: center ;
+    padding-right: 3vh ;
+    position: absolute ;
+}
+
+
+
+
+.home_video #home-video-button{ /***********/
+    border-radius: 15px;
+    width: 3vh ;
+    height: 3vh ;
+    background-color: #FBFAF5 ;
+    visibility: visible ;
+    object-fit: cover ;
+}
+
+
+
+
+.home_video .home-video-title {    /* animation here */
+   
+    /*position: absolute ;
+    border: 2px solid red ;
+    bottom: 0 ;
+    /*
+    color: #FBFAF5 ;
+    position: absolute;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: column ;
+    font-size: 2vh ;
+    border-radius: 55px ;
+    height: auto ;
+    width: auto ;
+    padding: 10vh ;
+    gap: 2vh ;
+    border: 2px solid #FBFAF5 ;
+    border-radius: 300px ;
+    backdrop-filter: blur(50px);
+    z-index: 2;*/
+}
+
+
+
+
+.home_video .home-video-title img {
+    height: 15vh ;
+    width: 15vh ;
+    padding: 0 ;
+}
+
+
+/************/
+/************/
+/************/
+
+
+
+
+.ani-logo {
+    height: 30vh ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: column ;
+    padding-top: 5vh ;
+}
+
+.ani-container{
+    position:  relative ;
+    width: 92% ;
+    height: 100% ;
+    display: flex ;
+    align-items: center ;
+    flex-direction: column ;
+}
+
+.ani-logo-container{
+    position: absolute ;
+    border: 4px solid #FBFAF5 ;
+    border-radius: 20px ;
+    height: 8vh ;
+    width: 8vh ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+     left: 0 ;
+}
+
+.svg-logo{
+width: 100% ;
+position: absolute ;
+}
+
+.ani-logo-container img {
+
+    height: 80% ;
+    width: 80% ;
+
+}
+
+
+
+
+.ani-context{
+    width: 60%;
+    height: 45%;
+    display: flex ;
+    justify-content: center ;
+    font-size: 5vh ;
+    gap: var(--gap) ;
+    --gap : 2vh ;
+    position: relative ;
+}
+
+.change-text-container{
+    overflow: hidden;
+    height: 100% ;
+    user-select: none ;
+}
+
+.change-text{
+    
+}
+
+.change-text-ani{
+    animation: scroll-text 5s ease-in-out 
+    0s 1 alternate both;
+}
+
+
+
+
+@keyframes scroll-text {
+    
+
+    0%{
+        transform: translateY( calc( -0% + var(--gap) / 4  ) );
+    }
+    25%{
+        transform: translateY( calc( -0% + var(--gap) / 4  ) );
+    }
+
+    50%{
+        transform: translateY( calc( -25% + var(--gap) / 4  ) );
+    }
+
+    75%{
+        transform: translateY( calc( -50% + var(--gap) / 4  ) );
+    }
+    100%{
+        transform: translateY( calc( -75% + var(--gap) / 4  ) );
+    }
+}
+
+
+
+.small-logo img {
+    width: 80% ;
+    height: 80% ;
+    object-fit: contain ;
+}
+
+
+
+/**************/
+
+.video-container-list
+{
+    width: 100% ;
+    height: 100%;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+    gap: 2vh ;
+}
+
+.video-container-list > div {
+    height: 65vh ;
+    width: 100% ;
+    border: none ;
+    border-radius: 20px ;
+    display: flex ;
+    align-items: center ;
+    padding-left: 2vh ;
+    padding-right: 2vh ;
+    position: relative ;
+    justify-content: flex-end ;
+}
+
+
+.video-container-1 a {
+    position: absolute ;
+}
+
+
+.video-container-1 a video{
+    height: 80% ;
+    width: 45% ;
+    left: 0 ;
+    border-radius: 20px ;
+    border: 1px solid transparent ;
+    z-index: 2;
+}
+
+.video-container-1 a:hover video:hover{
+
+    scale: 1.1 ;
+}
+
+.video-container-1 h1 {
+    font-size: 8vh     ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    width: 45% ;
+    border-radius: 15px ;
+    border-bottom: 3px solid #FBFAF5 ;
+}
+
+#D1{
+    right: 0 ;
+    padding-right: 2vh ;
+    padding-top: 2vh ;
+    height: 80%;
+    width: 55% ;
+    border-radius: 20px ;
+    display: flex ;
+    align-items: center ;
+    flex-direction: column ;
+    background-image: linear-gradient( to right , #fbfaf509 , #000000  ) ;
+    gap: 3.5vh ;
+}
+
+
+
+
+
+
+
+/************/
+/************/
+/************/
+
+.show_list{
+    overflow: hidden ;
+    transform: rotate(180deg);
+
+}
+
+
+
+
+/************/
+/************/
+/************/
+
+
+
+
+/************/
+/************/
+/************/
+
+.container-content{
+    
+    height: 50vh ;
+    width: auto ;
+    overflow: hidden ;
+
+}
+
+.content-title{   /***********/
+    height: 100% ;
+    position: relative ;
+    color: #222023 ;
+    display: flex ;
+    justify-content: flex-start ;
+    align-items: center ;
+    display: flex ;
+    align-items: center ;
+    justify-content: flex-end;
+    border-top: 2px solid #FBFAF5;
+}
+
+.content-title h2 {
+    transform: rotate(180deg);
+    width: 50vh ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    font-size: 6vh ;
+    color: #FBFAF5 ;
+}
+
+
+
+
+
+
+
+
+
+/************/
+/************/
+/************/
+
+
+#footer{       
+    height: auto;
+    width: 100% ;
+    display: flex ;
+    flex-wrap: wrap ;
+    flex-direction: column ;
+    height: 100vh;
+}
+
+
+.youtube-container{
+ 
+    width: 100% ;
+    height: 60% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+    gap: 3vh ;
+    background-image: linear-gradient( to top , black ,  #2220236a  );
+
+}
+
+#youtube_channel img {
+
+    width: 10vh ;
+    height: 10vh ;
+    background: #FBFAF5 ;
+    border-radius: 20px ;
+}
+
+#youtube_channel img:hover{
+    content: url(assets/youtube_R.png);
+    transition: 1s;
+}
+
+.youtube-container h1{  
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 2vh ;
+    font-weight: 200 ;
+}
+
+.youtube-container h1 img {
+    border: 2px solid black;
+    background-color: #FBFAF5;
+    object-fit: contain ;
+    height: 6vh ;
+    width: 6vh ;
+    border-radius: 10px ;
+}
+
+
+.youtube-container img {
+    height: 20vh ;
+    width: 20vh ;
+    object-fit: contain ;
+}
+
+
+.footer-content-container{
+
+    height: 40% ;
+    width: 100% ;
+    background-image: transparent ;
+    display: flex ;
+    align-items: center ;
+    flex-direction: column ;
+}
+
+.about-us-container{
+
+    height: 80% ;
+    width: 100% ;
+    display: flex ;
+    gap: 20% ;
+    justify-content: center ;
+    align-items: center ;
+   
+}
+
+.about-us-container a {
+
+    color: #FBFAF5 ;
+
+}
+
+.about-us-container > div {
+    display: flex ;
+    flex-direction: column ;
+    gap: 0.5vh ;
+}
+
+.members li {
+    padding-top: 0.5vh ;
+}
+
+.C-container {
+    height: 20% ;
+    width: 100% ;
+    display: flex ;
+    align-items: flex-end ;
+    justify-content: space-between ;
+    padding-left: 1vh ;
+    padding-right: 1vh ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.C-container p img{
+    height: 3vh ;
+    width: 3vh ;  
+    background-color: transparent ;
+} 
+
+
+
+#insta :hover{
+    content: url(assets/instagram_.png);
+}
+
+#insta img {
+    height: 3vh ;
+    width: 3vh ;
+    background-color: #FBFAF5;
+    border-radius: 5px ;
+}
+
+
+.contact-footer{
+    gap: 3vh ;
+}
+
+.contact-footer a {
+    padding: 1vh ;
+}
+
+.contact-footer p {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column ;
+    gap: 0.5vh ;
+    
+}
+
+.links-sc a {
+    text-decoration: none ;
+}
+
+.links-sc #youtube_channel img {
+    height: 3vh ;
+    width: 3vh ;
+    border-radius: 5px ;
+} 
+
+
+#discord{
+    border: 2px solid #FBFAF5;
+}
+
+
+.hidden{
+
+    opacity: 0 ;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s ;
+}
+
+.show{
+
+    opacity: 1 ;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
