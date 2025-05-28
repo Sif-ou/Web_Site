@@ -4,7 +4,7 @@
     box-sizing: border-box ;
     font-family: "Merriweather Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -320,8 +320,8 @@ position: absolute ;
     user-select: none ;
 }
 
-.change-text{
-    
+.change-text h1 {
+    padding-bottom: 0.6vh ;
 }
 
 .change-text-ani{
