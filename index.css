@@ -412,7 +412,7 @@ position: absolute ;
     border-radius: 20px ;
     border: 1px solid transparent ;
     z-index: 2;
-    filter: blur(4px);
+    filter: blur(7px);
 }
 
 .video-container-1 a:hover video:hover{
